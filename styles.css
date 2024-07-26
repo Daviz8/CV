@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather',serif;
+    background-color: white;
+    
+    
+}
+
+h1{ margin: 50px, auto, 0, auto;
+    font-family: 'Kurale'  , serif;
+    font-size: 4rem;
+    color:#d3ffff;
+    transition: all 5s ease-out;
+}
+
+
+h1:hover,
+h1:focus {
+  color: #ffff;
+}
+
+
+ul{ font-weight: bold;
+    line-height: 2;
+    font-weight: 700;
+}
+
+
+h2{ font-family: 'montserrat',sans-serif;
+    font-size: 2.0rem;
+    color:#66BFBF;
+    font-weight: normal;
+    padding-bottom: 10px;
+    ;
+}
+
+h3 { font-family: 'montserrat', sans-serif;
+    color: #11999E;
+}
+.top-container{
+    background-color: #256D85;
+    position: relative;
+    padding-top: 100px;  
+}
+
+.my-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    }
+    .my-image:hover{
+        transform: scale(1.5);
+        transform-style: preserve-3d;
+    }
+
+.p-header{
+    padding-bottom: 100px;
+    line-height: 1.5;
+    margin-top: 0;
+    color:#d3ffff;
+    font-size: 1rem;
+transition: all 2s ease-out;
+}
+
+
+.p-header:hover,
+.p-header:focus {
+color: #ffff;
+
+}
+ /*CONTENT*/
+
+.images{ width: 100px;
+    height: 100px;
+    float: right;
+    margin-right: 30px;   
+-webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+-webkit-transition-duration: 0.5s;
+
+}
+
+
+.images:hover{
+    transform: scale(1.5);
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+p{ line-height: 2;
+    
+}
+
+hr{ border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+a{ color: #11999E;
+   font-family:'montserrat' sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+    
+}
+
+.copyright{
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0px;
+    margin-top: 50px;
+}
+
+.footer-icons{ height: 5vh;
+    padding-top: 5px;
+    position: relative;
+    top: 20px;
+}
+    .footer-icons:hover{
+        transform: scale(1.5);
+    }
+
+
+.footer{
+    background-color: #16213E;
+        padding: 20px 10px;
+        height: 25vh;
+    }
+
+
+/*ANIMATIONS*/
+
+.hidden{
+opacity: 0;
+filter: blur(5px);
+transform: translateX(-100%);
+transition: all 1.5s ;
+}
+
+.show{
+    filter: blur(0);
+    transform: translateX(0);
+opacity: 1;
+
+}
