@@ -25,10 +25,12 @@ ul{ font-weight: bold;
     line-height: 2;
     font-weight: 700;
 }
-
+li{
+    font-size: clamp(1.5rem , 7vw , 1rem);
+}
 
 h2{ font-family: 'montserrat',sans-serif;
-    font-size: 2.0rem;
+    font-size: clmap( 1.5rem, 7vw , 2.0rem);
     color:#66BFBF;
     font-weight: normal;
     padding-bottom: 10px;
@@ -37,11 +39,12 @@ h2{ font-family: 'montserrat',sans-serif;
 
 h3 { font-family: 'montserrat', sans-serif;
     color: #11999E;
+    font-size: clmap( 1.5rem, 7vw , 2.0rem);
 }
 .top-container{
     background-color: #256D85;
     position: relative;
-    padding-top: 100px;  
+    padding: 150px;  
 }
 
 .my-image{
@@ -54,12 +57,11 @@ h3 { font-family: 'montserrat', sans-serif;
         transform-style: preserve-3d;
     }
 
-.p-header{
-    padding-bottom: 100px;
+.p-header{ Bottom: 100px;
     line-height: 1.5;
     margin-top: 0;
     color:#d3ffff;
-    font-size: 1rem;
+    font-size: clamp( 2rem 7vw 1rem);
 transition: all 2s ease-out;
 }
 
@@ -79,6 +81,8 @@ color: #ffff;
 -webkit-transition-duration: 0.5s;
 
 }
+
+
 
 
 .images:hover{
