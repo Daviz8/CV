@@ -61,7 +61,7 @@ h3 { font-family: 'montserrat', sans-serif;
     line-height: 1.5;
     margin-top: 0;
     color:#d3ffff;
-    font-size: clamp( 2rem 7vw 1rem);
+    font-size: clamp( 2.5rem 7vw 1rem);
 transition: all 2s ease-out;
 }
 
