@@ -3,6 +3,9 @@ body{
     text-align: center;
     font-family: 'Merriweather',serif;
     background-color: white;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
     
     
 }
@@ -10,39 +13,23 @@ body{
 h1{ margin: 50px, auto, 0, auto;
     font-family: 'Kurale'  , serif;
     font-size: 4rem;
-    color:#d3ffff;
+    color: white;
     transition: all 5s ease-out;
 }
 
 
+li{
+    text-decoration: none;
+    list-style-type:none;
+
+}
 h1:hover,
 h1:focus {
   color: #ffff;
 }
 
-
-ul{ font-weight: bold;
-    line-height: 2;
-    font-weight: 700;
-}
-li{
-    font-size: clamp(1.5rem , 7vw , 1rem);
-}
-
-h2{ font-family: 'montserrat',sans-serif;
-    font-size: clmap( 1.5rem, 7vw , 2.0rem);
-    color:#66BFBF;
-    font-weight: normal;
-    padding-bottom: 10px;
-    ;
-}
-
-h3 { font-family: 'montserrat', sans-serif;
-    color: #11999E;
-    font-size: clmap( 1.5rem, 7vw , 2.0rem);
-}
 .top-container{
-    background-color: #256D85;
+    background-color:#003580;
     position: relative;
     padding: 150px;  
 }
@@ -60,7 +47,7 @@ h3 { font-family: 'montserrat', sans-serif;
 .p-header{ Bottom: 100px;
     line-height: 1.5;
     margin-top: 0;
-    color:#d3ffff;
+    color:#ffffff;
     font-size: clamp( 2.5rem 7vw 1rem);
 transition: all 2s ease-out;
 }
@@ -82,24 +69,91 @@ color: #ffff;
 
 }
 
-
-
-
-.images:hover{
-    transform: scale(1.5);
+.containerx {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
 }
 
-.skill-row {
-    width: 50%;
-    margin: 100px auto 100px auto;
-    text-align: left;
-    line-height: 2;
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease-out;
 }
 
-p{ line-height: 2;
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Paytone One', sans-serif;
+    color: #003580;
+}
+
+.contact-info {
+    font-size: 0.9em;
+    color: #777;
+}
+
+h2 {
+    color: #003580;
+    border-bottom: 2px solid #003580;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-family: 'Paytone One', sans-serif;
     
 }
 
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.job {
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #003580;
+}
+
+.job .date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.education, .projects, .mentorship, .others {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+.social-link{
+    width: clamp(30px, 2vw, 30px);
+    height: clamp(30px, 2vw, 30px);
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
 hr{ border: dotted #EAF6F6 6px;
     border-bottom: none;
     width: 4%;
@@ -112,6 +166,50 @@ a{ color: #11999E;
     text-decoration: none;
     
 }
+
+
+#carousel {
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+.carousel-inner {
+    display: flex;
+    width: 900px; /* 3 slides of 300px each */
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+
+        /*  carousel Button Styles */
+
+        #prev, #next {
+            background-color: #003580; /* Button background color */
+            color: #fff; /* Text color */
+            border: none; /* Remove default border */
+            margin-top:clamp(2rem , 1vw , 2rem) ;
+            margin-left: 30px;
+            padding: 1rem 1rem;
+             font-size: 20px;
+            cursor: pointer; /* Change cursor on hover */
+            transform: translateY(-50%); /* Adjust for vertical centering */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth hover transition */
+        }
+        #prev {
+            left: 10px;
+        }
+        #next {
+            right: 10px; 
+        }
+        #prev:hover, #next:hover {
+            background-color: #001f4d; /* Darker shade on hover */
+        }
+
+
 
 .copyright{
     color: #EAF6F6;
