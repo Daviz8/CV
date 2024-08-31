@@ -148,8 +148,8 @@ ul {
 
 
 .social-link{
-    width: clamp(30px, 2vw, 30px);
-    height: clamp(30px, 2vw, 30px);
+    width: clamp(30px, 7vw, 30px);
+    height: clamp(30px, 7vw, 30px);
     margin-left: 40px;
     margin-top: 20px;
 
@@ -218,10 +218,10 @@ a{ color: #11999E;
     margin-top: 50px;
 }
 
-.footer-icons{ height: 5vh;
+.footer-icons{ height: clamp( 5vh, 0.5vh ,5vh);
     padding-top: 5px;
     position: relative;
-    top: 20px;
+    top: clamp(20px, 20px , 20px);
 }
     .footer-icons:hover{
         transform: scale(1.5);
@@ -231,7 +231,7 @@ a{ color: #11999E;
 .footer{
     background-color: #16213E;
         padding: 20px 10px;
-        height: 25vh;
+        height: clamp(25vh 2vw 25vw);
     }
 
 
