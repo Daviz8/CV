@@ -31,7 +31,8 @@ h1:focus {
 .top-container{
     background-color:#003580;
     position: relative;
-    padding: 150px;  
+    padding: 150px; 
+    margin-bottom: clamp(100px,7vw,100px); 
 }
 
 .my-image{
@@ -45,10 +46,11 @@ h1:focus {
     }
 
 .p-header{ Bottom: 100px;
-    line-height: 1.5;
+    line-height: clamp(1.5, 2 ,1.5 );
     margin-top: 0;
     color:#ffffff;
-    font-size: clamp( 2.5rem 7vw 1rem);
+    font-size: clamp( 1.4rem, 9vw, 1rem);
+    align-items: flex-end;
 transition: all 2s ease-out;
 }
 
@@ -92,8 +94,9 @@ color: #ffff;
 }
 
 .contact-info {
-    font-size: 0.9em;
+    font-size:clamp( 0.9em , 7vw,0.9em);
     color: #777;
+    padding: clamp(3rem, 20vw,3rem);
 }
 
 h2 {
