@@ -48,11 +48,10 @@ h1:focus{
     }
 
 .p-header{ Bottom: 100px;
-    line-height: clamp(1.5, 2 ,1.5 );
+    line-height: 1.5;
     margin-top: 0;
     color:#ffffff;
-    font-size: clamp( 1.4rem, 9vw, 1rem);
-    align-items: flex-end;
+    font-size: clamp( 2.5rem 7vw 1rem);
 transition: all 2s ease-out;
 font-weight: 600;
 }
